@@ -90,9 +90,9 @@ SELECT
 FROM report;
 SELECT
     CASE
-            WHEN new_dti < 0.2 THEN '1. An Toàn'
-            WHEN new_dti BETWEEN 0.2 AND 0.6 THEN '2. Thấp'
-            WHEN new_dti BETWEEN 0.7 AND 1 THEN '3. Trung bình'
+            WHEN new_dti < 0.2 THEN '1. Safe: < 0.2'
+            WHEN new_dti BETWEEN 0.2 AND 0.6 THEN '2. Low: 0.2 - 0.6'
+            WHEN new_dti BETWEEN 0.6 AND 1 THEN '3. Medium: 0.7 '
             WHEN new_dti BETWEEN 1.1 AND 2 THEN '4. Cao'
             ELSE '5. Rủi ro' 
 	END AS new_debt_to_income_group,
