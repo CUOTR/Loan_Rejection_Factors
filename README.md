@@ -79,5 +79,3 @@ Project follows data analysis workflow: preparation, overview, factors, gray are
 - All factors influence (except marriage); finance key.  
 - Prioritize business/debt consolidation.  
 - Re-evaluate criteria for improvements.  
-
-END
